@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ChatController {
 
     @MessageMapping("/sendMessage")
-    @SendTo("/topic/message")
+    @SendTo("/topic/messages")
     public ChatMessage sendMessage(ChatMessage message){
         return message;
     }
